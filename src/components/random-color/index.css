@@ -1,0 +1,10 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.header button {
+    margin-left: 2px;
+    cursor: pointer;
+}

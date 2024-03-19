@@ -19,22 +19,24 @@ export default function StarRating({noOfStarts = 10}) {
         setHover(rating);
     }
 
-    return <div className='star-body'>
-        <div className="star-rating">
-            {
-                [...Array(noOfStarts)].map((_,index) => {
-                    index += 1 ;
-                    
-                    return <FaStar
-                    key={index}
-                    className={index <= (hover || rating) ? 
-                        'active' : 'inactive'}
-                        onClick={() => handleClick(index)}
-                        onMouseMove={() => handleMouseEnter(index)}
-                        onMouseLeave={() => handleMouseLeave()}
-                        size={40} />
-                    })
-            }
+    return (
+        <div className='star-body'>
+            <div className="star-rating">
+                {
+                    [...Array(noOfStarts)].map((_,index) => {
+                        index += 1 ;
+                        
+                        return <FaStar
+                        key={index}
+                        className={index <= (hover || rating) ? 
+                            'active' : 'inactive'}
+                            onClick={() => handleClick(index)}
+                            onMouseMove={() => handleMouseEnter(index)}
+                            onMouseLeave={() => handleMouseLeave()}
+                            size={40} />
+                        })
+                }
+            </div>
         </div>
-    </div>
+    )
 }
