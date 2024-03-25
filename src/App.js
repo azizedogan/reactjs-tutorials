@@ -11,45 +11,65 @@ import ScrollIndicator from './components/scroll-indicator';
 import TabTest from './components/custom-tabs/tab-test';
 import ModalTest from './components/custom-model-popup/modal-test';
 import GithubProfilefinder from './components/github-profile-finder';
+import SearchAutocomplete from './components/search-autocomplete-with-api';
+import TicTacToe from './components/tic-tac-toe';
+import FeatureFlagGlobalState from './components/feature-flag/context';
+import FeatureFlags from './components/feature-flag';
+import UseFetchHookTest from './components/use-fetch/test';
 
 function App() {
   return (
     <div className="App">
       {/* Accordian Component */}
-      <Accordian />
+      {/* <Accordian /> */}
 
       {/* Random Color Component */}
-      <RandomColor />
+      {/* <RandomColor /> */}
 
       {/* Star Rating Component */}
-      <StarRating />
+      {/* <StarRating /> */}
 
       {/* Image Slider Component */}
-      <ImageSlider url={'https://picsum.photos/v2/list'} page={'1'} limit={'10'} />
+      {/* <ImageSlider url={'https://picsum.photos/v2/list'} page={'1'} limit={'10'} /> */}
 
       {/* Load More Data Component*/}
-      <LoadMoreData />
+      {/* <LoadMoreData /> */}
 
       {/* Tree View Component / Menu UI Component / Recursive Navigation Menu*/}
-      <TreeView menus={menus} />
+      {/* <TreeView menus={menus} /> */}
 
       {/* QR Code Generate Component */}
-      <QRCodeGenerator />
+      {/* <QRCodeGenerator /> */}
 
       {/* Light and Dark Theme Component */}
-      <LightDarkMode />
+      {/* <LightDarkMode /> */}
 
       {/* Scroll Indicator Component */}
-      <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} />
+      {/* <ScrollIndicator url={"https://dummyjson.com/products?limit=100"} /> */}
 
       {/* Custom Tabs Component */}
-      <TabTest />
+      {/* <TabTest /> */}
 
       {/* Custom Modal Popup Component */}
-      <ModalTest />
+      {/* <ModalTest /> */}
 
       {/* Github Profile Finder Component */}
-      <GithubProfilefinder />
+      {/* <GithubProfilefinder /> */}
+
+      {/* Search Autocomplete With API Component */}
+      {/* <SearchAutocomplete /> */}
+
+      {/* Tic Tac Toe Component */}
+      {/* <TicTacToe /> */}
+
+      {/* Feature Flags Implementation Component */}
+      {/* <FeatureFlagGlobalState>
+        <FeatureFlags />
+      </FeatureFlagGlobalState> */}
+
+      {/* useFetch - Custom Hook Component */}
+      <UseFetchHookTest />
+
     </div>
   );
 }
